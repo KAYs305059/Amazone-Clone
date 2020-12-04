@@ -1,4 +1,5 @@
 import React from 'react';
+import Product from './Product';
 import './Home.css';
 
 function Home() {
@@ -10,8 +11,54 @@ function Home() {
         alt=''
       />
 
-      {/* Product id, title, price, rating, iamge */}
-      {/* Product id, title, price, rating, image */}
+      <div className='home__row'>
+        <Product
+          id='123456'
+          title='Aint this some bullshit'
+          price={11.79}
+          rating={5}
+          image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv05uSGrQkMG5qqmsGeCuWQYZc8HGzscXOg&usqp=CAU'
+        />
+        <Product
+          id='123456'
+          title='Aint this some bullshit'
+          price={11.79}
+          rating={5}
+          image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv05uSGrQkMG5qqmsGeCuWQYZc8HGzscXOg&usqp=CAU'
+        />
+      </div>
+      <div className='home__row'>
+        <Product
+          id='123456'
+          title='Aint this some bullshit'
+          price={11.79}
+          rating={5}
+          image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv05uSGrQkMG5qqmsGeCuWQYZc8HGzscXOg&usqp=CAU'
+        />
+        <Product
+          id='123456'
+          title='Aint this some bullshit'
+          price={11.79}
+          rating={5}
+          image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv05uSGrQkMG5qqmsGeCuWQYZc8HGzscXOg&usqp=CAU'
+        />
+        <Product
+          id='123456'
+          title='Aint this some bullshit'
+          price={11.79}
+          rating={5}
+          image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv05uSGrQkMG5qqmsGeCuWQYZc8HGzscXOg&usqp=CAU'
+        />
+      </div>
+      <div className='home__roq'>
+        <Product
+          id='123456'
+          title='Aint this some bullshit'
+          price={11.79}
+          rating={5}
+          image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv05uSGrQkMG5qqmsGeCuWQYZc8HGzscXOg&usqp=CAU'
+        />
+      </div>
     </div>
   );
 }
