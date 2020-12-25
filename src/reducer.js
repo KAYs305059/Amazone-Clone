@@ -1,15 +1,5 @@
 export const initialState = {
-  basket: [
-    {
-      id: '90829332',
-      title:
-        "Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440",
-      price: 14000.98,
-      rating: 5,
-      image:
-        'https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg',
-    },
-  ],
+  basket: [],
   user: null,
 };
 
@@ -20,6 +10,11 @@ export const getBasketTotal = (basket) =>
 const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
+    case 'SET_USER':
+      return {
+        ...state,
+        user: action.user,
+      };
     case 'ADD_TO_BASKET':
       //logic for adding item to basket
       return {
